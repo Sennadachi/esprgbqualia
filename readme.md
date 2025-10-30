@@ -1,0 +1,1 @@
+Repository to initialize and test the 4" Round 720x720 RGB666(565) TFT display using ESP32-S3 Adafruit Qualia board.
