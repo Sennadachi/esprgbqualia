@@ -29,8 +29,8 @@ static const char *TAG = "rgb666_init";
 #define PIN_VSYNC   42
 #define PIN_DE      2
 // If your board has DISP / BL pins, set them here. Leave -1 to disable.
-#define PIN_DISP    -1
-#define PIN_BL      -1
+#define PIN_DISP    45
+#define PIN_BL      44
 
 // Data pins: We'll configure 16 data lines (RGB565) and map them from your
 // available pins. Original hardware had R1..R5, G0..G5, B1..B5 — for RGB565
@@ -64,12 +64,13 @@ void app_main(void)
 	esp_lcd_rgb_panel_config_t rgb_config = {
 		.data_width = 16,
 		.num_fbs = 2,
-		.psram_trans_align = 64,
+		.clk_src = 0,
+		.disp_gpio_num = PIN_DISP,
 		.pclk_gpio_num = PIN_PCLK,
 		.vsync_gpio_num = PIN_VSYNC,
 		.hsync_gpio_num = PIN_HSYNC,
 		.de_gpio_num = PIN_DE,
-		.disp_gpio_num = PIN_DISP,
+		.data_gpio_nums = {0},
 		.timings = {
 			.pclk_hz = PCLK_HZ,
 			.h_res = DISP_H_RES,
@@ -85,11 +86,9 @@ void app_main(void)
 			.vsync_back_porch = 16,
 			.vsync_front_porch = 50,
 		},
-		.data_gpio_nums = {0},
 		.flags = {
 			.fb_in_psram = true,
 		},
-		.clk_src = 0,
 	};
 
 	// Copy data pin numbers into the config (API expects an array).

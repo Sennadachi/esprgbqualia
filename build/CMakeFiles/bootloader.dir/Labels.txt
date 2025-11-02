@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+G:/HockleyInstruments/esprgbqualia/build/CMakeFiles/bootloader
+G:/HockleyInstruments/esprgbqualia/build/CMakeFiles/bootloader.rule
+G:/HockleyInstruments/esprgbqualia/build/CMakeFiles/bootloader-complete.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+G:/HockleyInstruments/esprgbqualia/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
